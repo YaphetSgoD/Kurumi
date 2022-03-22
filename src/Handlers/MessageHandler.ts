@@ -92,10 +92,10 @@ export default class MessageHandler {
 			);
 			if (!command)
 				return void M.reply(
-					`*Hello, ｡◕‿◕｡* \n\n I am here for you but Please, use command from help list*. *${this.client.config.prefix}help*.`
+					`*Hello, ｡◕‿◕｡* \n\n I am here for you but, use command from help list*. *${this.client.config.prefix}help*.`
 				);
 			const user = await this.client.getUser(M.sender.jid);
-			if (user.ban) return void M.reply("You're Banned from using commands.");
+			if (user.ban) return void M.reply("Because of your good behavior, you are ban from using commands.");
 			const state = await this.client.DB.disabledcommands.findOne({
 				command: command.config.command,
 			});
@@ -106,12 +106,12 @@ export default class MessageHandler {
 					}`
 				);
 			if (!command.config?.dm && M.chat === "dm")
-				return void M.reply("This command can only be used in groups. Don't use command in bot's DM otherwise you can be block for bot's dm");
+				return void M.reply("This command can only be used in groups. Don't use command in bot's DM otherwise you can be block for bot's dm and don't even dare to ask mod to unban you");
 			if (
 				command.config?.modsOnly &&
 				!this.client.config.mods?.includes(M.sender.jid)
 			) {
-				return void M.reply(`Only MODS are allowed to use this command.🛠️`);
+				return void M.reply(`Only MODS are allowed to use this command, Aho.🛠️`);
 			}
 			if (command.config?.adminOnly && !M.sender.isAdmin)
 				return void M.reply(`This command is only meant for the group admins⚠️`);
