@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://coolwallpapers.me/2884103-anime-girls-artwork-eye-patch-tokisaki-kurumi-date-a-live-gun.html"><img src="https://i.ibb.co/QmZ5CMt/848724.jpg" alt="Kurumi" border="0"></a>
+<a href="https://github.com/Eximinati/Kurumi"><img src="https://user-images.githubusercontent.com/72595444/159523345-0650dea7-0ee0-4ac9-8035-5d81c721430f.gif" alt="Kurumi" border="0"></a>
 
 # <h1><er>Kurumi</er></a></h1>
 
