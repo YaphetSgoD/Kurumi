@@ -9,7 +9,7 @@ import request from '../../lib/request'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'help',
+            command: 'dairy',
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/Pikachu/help.mp4'
+            './assets/Pikachu/_yuno.mirai_-20220322-0001.mp4'
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -53,13 +53,13 @@ export default class Command extends BaseCommand {
             return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
             caption: `${text} 
- ──❅┈[ *𝒦𝓊𝓇𝓊𝓂𝒾* ]┈❅───
+ ──❅┈[ *𝓨𝓾𝓷𝓸 𝓰𝓪𝓼𝓪𝓲* ]┈❅───
 ┌────────────┈❅
-│   🧨 *KURUMI*
-│   ©️ Kurumi love Botto
+│   🧨 *Yuno*
+│   ©️ 𝙔𝙪𝙣𝙤 𝙜𝙖𝙨𝙖𝙞
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-🌹 *Note:* \nUse *${this.client.config.prefix}help* <command_name> \n to view the command info ` }
+🌹 *Note:* \nUse *${this.client.config.prefix}dairy* <command_name> \n to view the command info ` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
