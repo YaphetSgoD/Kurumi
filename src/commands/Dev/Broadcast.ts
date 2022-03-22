@@ -29,9 +29,9 @@ export default class Command extends BaseCommand {
 			return void (await M.reply(`Please provide the Broadcast Message.`));
 		const term = joined.trim();
 		const gifs = [
-			"https://c.tenor.com/U_nsDqH7klkAAAAC/ano-blushing.mp4",
-			"https://c.tenor.com/pEVZJBfnadcAAAAC/kawaii-cute.mp4",
-			"https://c.tenor.com/WCNVOmUUPekAAAAj/gumi-echo.mp4",
+			"https://c.tenor.com/5U-qINTmaR0AAAPo/mirai-nikki-yuno-and-yukiteru.mp4",
+			"https://c.tenor.com/6UaQfVCs2LEAAAPo/yup.mp4",
+			"https://c.tenor.com/PGJ1eiHIWHsAAAPo/future-diary-mirai-nikki.mp4",
 		];
 		const selected = gifs[Math.floor(Math.random() * gifs.length)];
 		// eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -42,7 +42,7 @@ export default class Command extends BaseCommand {
 			.map((jids) => (jids.includes("g.us") ? jids : null))
 			.filter((v) => v);
 		for (let i = 0; i < chats.length; i++) {
-			const text = `*🍃🎋「 Kurumi BROADCAST 」🎋🍃*\n\n${term}\n\n`;
+			const text = `*🍃🎋「 Yuno BROADCAST 」🎋🍃*\n\n${term}\n\n`;
 			this.client.sendMessage(chats[i], { url: selected }, MessageType.video, {
 				mimetype: Mimetype.gif,
 				caption: `${text}`,
