@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h', 'menu', 'kurumi', 'cmd']
+            aliases: ['h', 'help', 'fd', 'dairy']
         })
     }
 
@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─「check guide command *,guide*」
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
-│⋊ ɴᴀᴍᴇ: *KURUMI*
+│⋊ ɴᴀᴍᴇ: *𝙔𝙪𝙣𝙤*
 │⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 │⋊ ᴏᴡɴᴇʀ: *${this.client.config.prefix}mods*
 │⋊ ᴏᴡɴᴇʀ: if you wanna add bot ask to owner
@@ -59,14 +59,14 @@ export default class Command extends BaseCommand {
 │   ©️ 𝙔𝙪𝙣𝙤 𝙜𝙖𝙨𝙖𝙞
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-🌹 *Note:* \nUse *${this.client.config.prefix}dairy* <command_name> \n to view the command info ` }
+🌹 *Note:* \nOpen your *${this.client.config.prefix}dairy* <command_name> \n to see your dead end ` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
         const command = this.handler.commands.get(key) || this.handler.aliases.get(key)
         if (!command) return void M.reply(`No Command of Alias Found | "${key}"`)
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
-        M.reply(
+        M.reply(buttonMessage 
             `🎈 *Command:* ${this.client.util.capitalize(command.config?.command)}\n📉 *Status:* ${
                 state ? 'Disabled' : 'Available'
             }\n⛩ *Category:* ${this.client.util.capitalize(command.config?.category || '')}${
