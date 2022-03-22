@@ -11,7 +11,7 @@
 
 </div>
 <div align="center">
-<h1>yuno is full of Anime and Nsfw and many more features</h1>
+<h1>Yuno is full of Anime and Nsfw and many more features</h1>
 </div>
 
 ## ✨ Highlights
@@ -26,12 +26,12 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/Eximinati/Kurumi/blob/main/README.md)
+    [Yuno-Guides](https://github.com/Eximinati/Kurumi/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Kurumi_featuresList.md](https://github.com/Eximinati/Kurumi/blob/main/Features.md)
+    here➡️[Yuno_featuresList.md](https://github.com/Eximinati/Kurumi/blob/main/Features.md)
 
 ## 💪 Contribution
 
