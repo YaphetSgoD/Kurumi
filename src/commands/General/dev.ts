@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/Pikachu/images (4).mp4'
+            './assets/images/images (5).jpeg'
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `
 ╭─️⌜COMMANDS FOR MODS⌝
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
-│⋊ ɴᴀᴍᴇ: PIKU
+│⋊ ɴᴀᴍᴇ: 𝙔𝙪𝙣𝙤
 │⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 ╰────────────┘                            \n\n`
             const keys = Object.keys(categories)
@@ -53,8 +53,8 @@ export default class Command extends BaseCommand {
             caption: `${text} 
  ──❅┈[ 🤖 ]┈❅───
 ┌────────────┈❅
-│   🧨 PIKU
-│   ©️ Synthesized Infinity Botto
+│   🧨 𝙔𝙪𝙣𝙤 𝙜𝙖𝙨a𝙞
+│   ©️  yuno nikki
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 ${this.client.config.prefix}ᴇᴠᴀʟ ᴛʜɪs.ᴄʟɪᴇɴᴛ.ʙᴀɴᴜsᴇʀ("[ᴍᴏʙ]@s.ᴡʜᴀᴛsᴀᴘᴘ.ɴᴇᴛ")
