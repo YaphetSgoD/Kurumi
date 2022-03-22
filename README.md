@@ -1,7 +1,7 @@
 <div align="center">
 <a href="https://github.com/Eximinati/Kurumi"><img src="https://user-images.githubusercontent.com/72595444/159523345-0650dea7-0ee0-4ac9-8035-5d81c721430f.gif" alt="Kurumi" border="0"></a>
 
-# <h1><er>Kurumi</er></a></h1>
+# <h1><er>Yuno</er></a></h1>
 
 ## [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/GSn8rbP9M1ZBXFPPjgO1oK)<br> [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) <br>[![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
 
@@ -11,7 +11,7 @@
 
 </div>
 <div align="center">
-<h1>Kurumi is full of Anime and Nsfw and many more features</h1>
+<h1>yuno is full of Anime and Nsfw and many more features</h1>
 </div>
 
 ## ✨ Highlights
@@ -26,12 +26,12 @@
 ## 💻 Deploy/Hosting Guide
 
 -   Section Moved to
-    [Chitoge-Guides](https://github.com/ShineiIchijo/Chitoge-Guides/blob/main/README.md)
+    [Chitoge-Guides](https://github.com/Eximinati/Kurumi/blob/main/README.md)
 
 ## 🍥 Features of the Repo
 
 -   To view all features, click
-    here➡️[Chitoge_featuresList.md](https://github.com/ShineiIchijo/Chitoge/blob/main/Features.md)
+    here➡️[Kurumi_featuresList.md](https://github.com/Eximinati/Kurumi/blob/main/Features.md)
 
 ## 💪 Contribution
 
