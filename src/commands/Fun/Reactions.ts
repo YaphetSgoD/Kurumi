@@ -36,6 +36,7 @@ export default class Command extends BaseCommand {
                 'wink',
                 'happy',
                 'poke',
+                'spank',
                 'dance'
             ],
             category: 'fun',
@@ -75,6 +76,7 @@ export default class Command extends BaseCommand {
             slap: ['Slapped'],
             cringe: ['Cringed at'],
             kick: ['Kicked'],
+            spank: ['spanked'],
             wink: ['Winked at'],
             happy: ['is Happy with', 'is Happy by'],
             poke: ['Poked'],
