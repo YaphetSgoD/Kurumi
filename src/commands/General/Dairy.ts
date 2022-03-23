@@ -9,11 +9,11 @@ import request from '../../lib/request'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'help',
+            command: 'dairy',
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h', 'menu', 'piku', 'cmd']
+            aliases: ['h', 'fg', 'Dairy', 'cmd']
         })
     }
 
@@ -41,8 +41,9 @@ export default class Command extends BaseCommand {
 │⋊ ɴᴀᴍᴇ: YUNO
 │⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
 │⋊ ᴏᴡɴᴇʀ: *${this.client.config.prefix}mods*
-│⋊ ᴏᴡɴᴇʀ: if you wanna add bot ask to owner
-╰────────────                            \n\n`
+│⋊ ᴏᴡɴᴇʀ: 𝓣𝓸 𝓼𝓮𝓮 𝔂𝓸𝓾𝓻 𝓯𝓾𝓽𝓾𝓻𝓮 𝓲𝓷 𝔂𝓸𝓾𝓻 𝓰𝓻𝓸𝓾𝓹 𝓪𝓼𝓴 𝓽𝓱𝓮 𝓸𝔀𝓷𝓮𝓻
+╰────────────                            
+                     🅻🅴🆃 🆃🅷🅴 🅶🅰🅼🅴 🅱🅴🅶🅸🅽\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.lemojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n\n• \`\`\`${categories[
@@ -58,8 +59,8 @@ export default class Command extends BaseCommand {
 │   🧨 *𝓨𝓾𝓷𝓸*
 │   ©️ 𝙔𝙪𝙣𝙤 𝙜𝙖𝙨𝙖𝙞
 └────────────┈⁂
-❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
-🌹 *Note:* \nUse *${this.client.config.prefix}help* <command_name> \n to view the command info ` }
+❅┈[Maybe the future is bad. But there's a future beyond that, right?]┈❅
+🌹 *Note:* \nUse *${this.client.config.prefix}help* <command_name> \n to view your Dairy ` }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
