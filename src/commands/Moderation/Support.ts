@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
         (await this.client.sendMessage(
         M.sender.jid,
-        `🥂 *MY MASTER GROUP* 🥂 \n 🧮 AKUMA support 📃 \n\n\nhttps://www.facebook.com/profile.php?id=100079264362856`,
+        `🥂 *MY MASTER GROUP* 🥂 \n 🧮 AKUMA support 📃 \n\n\nhttps://www.facebook.com/groups/600441174428472/?ref=share_group_link`,
            MessageType.text
         ))
         const n = [
